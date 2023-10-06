@@ -44,7 +44,7 @@ def kream_webcrawling():
     # Scroll to load more data
     scroll_count = 0 # Variable to track the number of scrolls
 
-    while scroll_count < 10:
+    while scroll_count < 2:
         # Select a specific div element by class name
         div_elements = driver.find_elements(By.CLASS_NAME, "product_card")
 
@@ -77,3 +77,6 @@ def kream_webcrawling():
 
     # Close the web browser
     driver.quit()
+
+if __name__ == "__main__":
+    kream_webcrawling()
