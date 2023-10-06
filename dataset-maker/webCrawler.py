@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import re
 
 # Start the Chrome web driver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -33,8 +34,12 @@ while scroll_count < 10:
         img_src = img_element.get_attribute("src")
         name_src = name_element.text
 
+        # Use regular expression to search and remove Korean characters and square brackets
+        pattern = re.compile(r'[가-힣\[\]]+')  # Unicode range for Korean characters and square brackets
+        filtered_name_src = pattern.sub('', name_src)
+
         # Print the src attribute of the image
-        print("Image Attributes:", img_src, name_src)
+        print("Image Attributes:", img_src, filtered_name_src)
 
     print(len(div_elements))
 
