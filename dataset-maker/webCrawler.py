@@ -1,30 +1,48 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+import time
 
+# Start the Chrome web driver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-url = "https://kream.co.kr/search"
+# Initialize a target url: 49-Outer, 50-Top, 51-Bottom
+category_num = [49, 50, 51]
+url = "https://kream.co.kr/search?tab=49"
 
-# 웹 페이지 열기
+# Navigate to the web page
 driver.get(url)
 
-# 웹 페이지의 내용을 출력
-print(driver.page_source)
+# Scroll to load more data
+scroll_count = 0 # Variable to track the number of scrolls
 
-# 웹 드라이버 종료
+while scroll_count < 10:
+    # Select a specific div element by class name
+    div_elements = driver.find_elements(By.CLASS_NAME, "product_card")
+
+    for i, div_element in enumerate(div_elements):
+        # Find the target tag within the selected div element
+        picture_element = div_element.find_element(By.TAG_NAME, "picture")
+        name_element = div_element.find_element(By.CLASS_NAME, "name")
+
+        # Find the image tag (e.g., img tag) inside the picture tag
+        img_element = picture_element.find_element(By.TAG_NAME, "img")
+
+        # Get the src attribute of the image
+        img_src = img_element.get_attribute("src")
+        name_src = name_element.text
+
+        # Print the src attribute of the image
+        print("Image Attributes:", img_src, name_src)
+
+    print(len(div_elements))
+
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    # Scroll down to load more data
+    time.sleep(2)  # Delay between scrolls (adjust as needed, in seconds)
+
+    scroll_count += 1
+
+# Close the web browser
 driver.quit()
-
-# headers = {
-#     "User-Agent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-# }
-# resp = requests.get(url, headers=headers)
-# soup = BeautifulSoup(resp.text, 'lxml')
-
-# search = soup.find_all('div', attrs={'data-v-a443911e': True, 'class': 'search_content'})
-
-# print(search)
-
-# search = soup
-# print(len(search))
-# print(search)
