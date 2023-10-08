@@ -74,11 +74,8 @@ def kream_webcrawling():
         img_src = img_element.get_attribute("src")
         name_text = name_element.text
 
-        # Use regular expression to search and remove Korean characters and square brackets
-        pattern = re.compile(r'[가-힣\[\]]+')  # Unicode range for Korean characters and square brackets
-        filtered_name = pattern.sub('', name_text)
-        # Filtering product serial numbers
-        filtered_name = re.sub(r'\([^)]*\)', '', filtered_name)
+        # Use regular expression to search and remove Korean characters, square brackets, and product serial numbers surrounded by round brackets
+        filtered_name = re.sub(r'\[.*?\]|\(.*?\)|[가-힣]+', '', name_text) # Unicode range for Korean characters, square brackets, and product serial numbers surrounded by round brackets
 
         caption = f"{category}, " + filtered_name
 
