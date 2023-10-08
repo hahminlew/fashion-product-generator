@@ -16,7 +16,7 @@ Let's easily fine-tuning pre-trained Stable Diffusion using `dataset-maker` and 
 ## dataset-maker Instructions
 `dataset-maker` is an example for a custom data collection tool to finetune Stable Diffusion. It consists of web crawler and BLIP image captioning module.
 
-1. ```cd easy-finetuning-stable-diffusion```
+1. ```cd dataset-maker```
 
 2. Inspect your desired website and slightly modify `webCrawler.py`.
 
