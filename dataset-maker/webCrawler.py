@@ -74,7 +74,7 @@ def kream_webcrawling():
         driver.get(url)
 
         # Scroll to load more data
-        scroll_number = 1 # Variable to define the number of scrolls
+        scroll_number = args.num_scroll # Variable to define the number of scrolls
 
         for _ in tqdm(range(scroll_number)):
             # Select a specific div element by class name
@@ -135,6 +135,7 @@ def kream_webcrawling():
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--save_dir", default="./kream", type=str, help="Path to save images and captions")
+    parser.add_argument('--num_scroll', type=int, default=110, help='Number of scroll')
     args = parser.parse_args()
 
     os.makedirs(os.path.join(args.save_dir, "img"), exist_ok=True)
