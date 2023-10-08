@@ -36,7 +36,7 @@ def kream_webcrawling():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     # Initialize a target url: 49-Outer, 50-Top, 51-Bottom
-    category_name = ['outer', 'top', 'bottom']
+    category_name = ["outer", "top", "bottom"]
     category_dict = {
         category_name[0]: 49,
         category_name[1]: 50,
@@ -60,7 +60,7 @@ def kream_webcrawling():
 
         time.sleep(1)
 
-    print('final div_elements num: ', len(div_elements))
+    print("final div_elements num: ", len(div_elements))
 
     for i, div_element in enumerate(div_elements):
         # Find the target tag within the selected div element
@@ -71,19 +71,19 @@ def kream_webcrawling():
         img_element = picture_element.find_element(By.TAG_NAME, "img")
 
         # Get the src attribute of the image
-        img = img_element.get_attribute("src")
-        name = name_element.text
+        img_src = img_element.get_attribute("src")
+        name_text = name_element.text
 
         # Use regular expression to search and remove Korean characters and square brackets
         pattern = re.compile(r'[가-힣\[\]]+')  # Unicode range for Korean characters and square brackets
-        filtered_name = pattern.sub('', name)
+        filtered_name = pattern.sub('', name_text)
         # Filtering product serial numbers
         filtered_name = re.sub(r'\([^)]*\)', '', filtered_name)
 
         caption = f"{category}, " + filtered_name
 
         # Print the src attribute of the image
-        print("Image Attributes:", img, caption)
+        print("Image Attributes:", img_src, caption)
 
     # Close the web browser
     driver.quit()
