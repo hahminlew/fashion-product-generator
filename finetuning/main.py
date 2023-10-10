@@ -6,6 +6,7 @@ import os
 from argparse import ArgumentParser
 import json
 
+
 def gen():
     # Load dataset information
     dataset_info = os.path.join(args.dataset_dir, 'dataset_BLIP.json')
@@ -22,9 +23,6 @@ def gen():
         raw_image = Image.open(img_path).convert('RGB')
 
         yield {"image": raw_image, "text": img_caption}
-
-        break
-
 
 if __name__ == "__main__":
     parser = ArgumentParser()
