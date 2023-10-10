@@ -29,6 +29,6 @@ Have fun creating realistic, high-quality fashion items!
 python webCrawler.py
 ```
 
-***KREAM Product Dataset Examples Collected by ***`dataset-maker`
+***KREAM Product Dataset Examples Collected by *** `dataset-maker`
 
 <img src="./assets/examples.gif" width="100%"/>
