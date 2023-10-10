@@ -21,6 +21,11 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 ```conda activate efsd```
 
 ## dataset-maker Instructions
+
+***KREAM Product Dataset Examples Collected by*** `dataset-maker`
+
+<img src="./assets/examples.gif" width="100%"/>
+
 `dataset-maker` is an example for a custom data collection tool to finetune Stable Diffusion. It consists of web crawler and BLIP image captioning module.
 
 1. ```cd dataset-maker```
@@ -33,9 +38,11 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 python webCrawler.py
 ```
 
-***KREAM Product Dataset Examples Collected by*** `dataset-maker`
+4. Run `BLIP_captioning.py`
 
-<img src="./assets/examples.gif" width="100%"/>
+```
+python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition a photography of
+```
 
 
 ## References
