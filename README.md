@@ -35,7 +35,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 2. Run `download_KREAM.py`.
 
 ```
-python download_KREAM.py
+python download_KREAM.py --save_dir [/path/to/save]
 ```
 
 3. Run `BLIP_captioning.py`. 
