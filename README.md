@@ -36,15 +36,15 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 mv ./dataset.json [/path/to/save]
 ```
 
-2. ```cd dataset-maker```
+```cd dataset-maker```
 
-3. Run `download_KREAM.py`.
+2. Run `download_KREAM.py`.
 
 ```
 python download_KREAM.py --save_dir [/path/to/save]
 ```
 
-4. Run `BLIP_captioning.py`. 
+3. Run `BLIP_captioning.py`. 
 
 ```
 CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
