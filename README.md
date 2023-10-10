@@ -30,19 +30,27 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ### Download KREAM Product Dataset
 
-1. ```cd dataset-maker```
+1. Move [dataset.json](./dataset.json) file into desired save directory for KREAM Product Dataset.
 
-2. Run `download_KREAM.py`.
+```
+mv ./dataset.json [/path/to/save]
+```
+
+2. ```cd dataset-maker```
+
+3. Run `download_KREAM.py`.
 
 ```
 python download_KREAM.py --save_dir [/path/to/save]
 ```
 
-3. Run `BLIP_captioning.py`. 
+4. Run `BLIP_captioning.py`. 
 
 ```
 CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
 ```
+
+BLIP captioning results will be saved in /path/to/save/[dataset_BLIP.json](./dataset_BLIP.json)
 
 ### Try your own dataset creation.
 
