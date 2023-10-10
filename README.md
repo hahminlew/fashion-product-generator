@@ -41,7 +41,7 @@ python webCrawler.py
 4. Run `BLIP_captioning.py`
 
 ```
-python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition a photography of
+python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
 ```
 
 
