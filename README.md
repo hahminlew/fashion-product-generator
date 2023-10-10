@@ -1,4 +1,4 @@
-# Easy Finetuning Stable Diffusion
+# Easy Finetuning Stable Diffusion: KREAM-Product-Displayer
 Let's easily fine-tuning pre-trained Stable Diffusion using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
 
 **KREAM-Product-Displayer** is a finetuned text-to-image generative model with a custom dataset collected from [KREAM](https://kream.co.kr/), one of the best online-resell market in Korea.
