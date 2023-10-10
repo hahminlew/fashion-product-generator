@@ -16,15 +16,13 @@ def blip_image_captioning():
     processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
     model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large").to(device)
 
-    dataset_path = os.listdir(os.path.join(args.dataset_dir, "img"))
-
     # Load dataset information
     dataset_info = os.path.join(args.dataset_dir, 'dataset.json')
     with open(dataset_info, "r") as f:
         dataset = json.load(f)
 
     # Prepare the dataset paths
-    dataset_path = [os.path.join(args.dataset_dir, "img", filename) for filename in dataset if filename.endswith(('.jpg', '.png', '.jpeg'))]
+    dataset_path = [os.path.join(args.dataset_dir, "img", filename) for filename in dataset_path if filename.endswith(('.jpg', '.png', '.jpeg'))]
 
     for img_path in tqdm(dataset_path):
         img_name = img_path.split("/")[-1]
