@@ -28,6 +28,24 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 `dataset-maker` is an example for a custom data collection tool to finetune Stable Diffusion. It consists of web crawler and BLIP image captioning module.
 
+### Download KREAM Product Dataset
+
+1. ```cd dataset-maker```
+
+2. Run `download_KREAM.py`.
+
+```
+python download_KREAM.py
+```
+
+3. Run `BLIP_captioning.py`. 
+
+```
+CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
+```
+
+### Try your own dataset creation.
+
 1. ```cd dataset-maker```
 
 2. Inspect your desired website and slightly modify `webCrawler.py`.
@@ -38,11 +56,14 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 python webCrawler.py
 ```
 
-4. Run `BLIP_captioning.py`
+4. Run `BLIP_captioning.py`.
 
 ```
 CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
 ```
+
+## Finetuning Stable Diffusion Instructions
+
 
 
 ## References
