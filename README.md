@@ -36,3 +36,9 @@ python webCrawler.py
 ***KREAM Product Dataset Examples Collected by*** `dataset-maker`
 
 <img src="./assets/examples.gif" width="100%"/>
+
+
+## References
+
+- [BLIP image captioning](https://github.com/salesforce/BLIP) and [BLIP Hugging Face Demo](https://huggingface.co/Salesforce/blip-image-captioning-large)
+- [Hugging Face Dataset Creation Tutorial](https://huggingface.co/docs/datasets/create_dataset)
