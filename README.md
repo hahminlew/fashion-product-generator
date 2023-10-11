@@ -1,5 +1,5 @@
 # KREAM-Product-Generator
-Let's easily fine-tuning pre-trained Stable Diffusion using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
+Let's easily fine-tuning a pre-trained Stable Diffusion using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
 
 **KREAM-Product-Generator** is a finetuned text-to-image generative model with a custom dataset collected from [KREAM](https://kream.co.kr/), one of the best online-resell market in Korea.
 Have fun creating realistic, high-quality fashion items!
@@ -30,7 +30,7 @@ pip install git+https://github.com/huggingface/diffusers
 
 <img src="./assets/examples.gif" width="100%"/>
 
-`dataset-maker` is an example for a custom data collection tool to finetune Stable Diffusion. It consists of web crawler and [BLIP image captioning module](https://github.com/salesforce/BLIP).
+`dataset-maker` is an example for a custom data collection tool to finetune the Stable Diffusion. It consists of web crawler and [BLIP image captioning module](https://github.com/salesforce/BLIP).
 
 ### KREAM Product Dataset from Hugging Face
 
@@ -77,17 +77,19 @@ BLIP captioning results will be saved in /path/to/save/[dataset_BLIP.json](./dat
 
 ### Try Your Own Dataset Creation
 
-1. ```cd dataset-maker```
+```cd dataset-maker```
 
-2. Inspect your desired website and slightly modify `webCrawler.py`.
+1. Inspect your desired website and slightly modify `webCrawler.py`.
 
-3. Run `webCrawler.py`.
+**Please exercise caution when web crawling. Make sure to adhere to the website's crawling policies, which can be found in the '/robots.txt'.*
+
+2. Run a modified `webCrawler.py`.
 
 ```
 python webCrawler.py
 ```
 
-4. Run `BLIP_captioning.py`.
+3. Run `BLIP_captioning.py`.
 
 ```
 CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset] --use_condition --text_condition 'a photography of'
@@ -95,7 +97,19 @@ CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset
 
 ## Finetuning Stable Diffusion Instructions
 
+I utilized `Hugging Face Diffusers Text-to-Image Examples` for finetuning a pre-trained Stable Diffusion.
 
+```cd finetuning```
+
+```
+sudo chmod +x run.sh
+```
+
+```
+./run.sh
+```
+
+**Make sure you have Hugging Face and wandb account. You should create directory and personal tokens for Hugging Face. Also, please check your personal API keys for wandb.*
 
 ## References
 
