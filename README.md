@@ -30,7 +30,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ### KREAM Product Dataset from Hugging Face
 
-[KREAM Product Blip Captions Dataset](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions) is also available in Hugging Face 🤗.
+[KREAM Product Blip Captions Dataset](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions) is now available in Hugging Face 🤗.
 
 ```
 from datasets import load_dataset
@@ -41,7 +41,7 @@ display(sample["image"].resize((256, 256)))
 print(sample["text"])
 ```
 
-### Download KREAM Product Dataset
+### Download KREAM Product Dataset from Scratch
 
 1. Move [dataset.json](./dataset.json) file into desired save directory for KREAM Product Dataset.
 
@@ -65,7 +65,7 @@ CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset
 
 BLIP captioning results will be saved in /path/to/save/[dataset_BLIP.json](./dataset_BLIP.json)
 
-### Try your own dataset creation.
+### Try Your Own Dataset Creation
 
 1. ```cd dataset-maker```
 
