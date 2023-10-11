@@ -28,7 +28,18 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 `dataset-maker` is an example for a custom data collection tool to finetune Stable Diffusion. It consists of web crawler and [BLIP image captioning module](https://github.com/salesforce/BLIP).
 
+### KREAM Product Dataset from Hugging Face
+
 [KREAM Product Blip Captions Dataset](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions) is also available in Hugging Face 🤗.
+
+```
+from datasets import load_dataset
+
+dataset = load_dataset("hahminlew/kream-product-blip-captions", split="train")
+sample = dataset[0]
+display(sample["image"].resize((256, 256)))
+print(sample["text"])
+```
 
 ### Download KREAM Product Dataset
 
