@@ -109,7 +109,7 @@ sudo chmod +x run.sh
 ./run.sh
 ```
 
-**Make sure you have Hugging Face and wandb account. You should create directory and personal tokens for Hugging Face. Also, please check your personal API keys for wandb.*
+**Make sure you have Hugging Face and wandb account. You should create a directory and personal tokens for Hugging Face. Also, please check your personal API keys for wandb.*
 
 ## References
 
