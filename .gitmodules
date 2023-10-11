@@ -1,3 +1,0 @@
-[submodule "finetuning/diffusers"]
-	path = finetuning/diffusers
-	url = https://github.com/huggingface/diffusers.git
