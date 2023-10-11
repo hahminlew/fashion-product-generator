@@ -20,6 +20,10 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ```conda activate efsd```
 
+```
+pip install git+https://github.com/huggingface/diffusers
+```
+
 ## dataset-maker Instructions
 
 ***KREAM Product Dataset Examples Collected by*** `dataset-maker`
