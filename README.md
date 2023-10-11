@@ -41,6 +41,12 @@ display(sample["image"].resize((256, 256)))
 print(sample["text"])
 ```
 
+![png](./assets/outer_00000.png)
+
+```
+outer, The North Face 1996 Eco Nuptse Jacket Black, a photography of the north face black down jacket
+```
+
 ### Download KREAM Product Dataset from Scratch
 
 1. Move [dataset.json](./dataset.json) file into desired save directory for KREAM Product Dataset.
