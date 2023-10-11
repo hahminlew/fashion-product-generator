@@ -13,7 +13,7 @@ dependencies:
     - certifi==2023.7.22
     - charset-normalizer==3.3.0
     - datasets==2.14.5
-    - diffusers==0.21.4
+    - diffusers==0.22.0.dev0
     - dill==0.3.7
     - filelock==3.12.4
     - frozenlist==1.4.0
