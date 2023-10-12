@@ -429,7 +429,6 @@ DATASET_NAME_MAPPING = {
     "hahminlew/kream-product-blip-captions": ("image", "text"),
 }
 
-
 def unet_attn_processors_state_dict(unet) -> Dict[str, torch.tensor]:
     """
     Returns:
