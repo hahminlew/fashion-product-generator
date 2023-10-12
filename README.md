@@ -102,9 +102,7 @@ CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset
 
 ## Finetuning Stable Diffusion Instructions
 
-I utilized `Hugging Face Diffusers Text-to-Image Examples` for finetuning a pre-trained Stable Diffusion XL with [LoRA](https://github.com/cloneofsimo/lora).
-
-I finetuned the model under 4 NVIDIA GeForce RTX 3090 GPUs, and Memory-Usage was approximately 65GB.
+I utilized `Hugging Face Diffusers Text-to-Image Examples` for finetuning a pre-trained Stable Diffusion XL with [LoRA](https://github.com/cloneofsimo/lora) under 4 NVIDIA GeForce RTX 3090 GPUs (Memory-Usage: approximately 65GB).
 
 ```cd finetuning```
 
@@ -147,10 +145,10 @@ sudo chmod +x run.sh
 ## Inference
 
 ```
-python inference.py --hub_username [your hugging face username] --prompt 'The Nike x Balenciaga down jacket black.' --img_name ***.png
+python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.' --img_name ***.png
 ```
 
-Parameter Descriptions
+**Parameter Descriptions**
 - `num_inference_steps`: int, Number of diffusion steps
 - `guidance_scale`: float, How similar the generated image will be to the prompt, 1 <= `guidance_scale` <= 50
 
