@@ -10,6 +10,10 @@ if __name__ == "__main__":
                         help="Type your prompt here")
     parser.add_argument("--img_name", default="generated kream product.png", type=str, 
                         help="Save image file name") 
+    parser.add_argument("--num_inference_steps", default=30, type=int, 
+                        help="Number of diffusion process")
+    parser.add_argument("--guidance_scale", default=7.5, type=float, 
+                        help="Guidance scale")
     args = parser.parse_args()
 
     model_path = f"{args.hub_user_id}/sdxl-kream-model-lora"
@@ -17,5 +21,5 @@ if __name__ == "__main__":
     pipe.to("cuda")
     pipe.load_lora_weights(model_path)
 
-    image = pipe(args.prompt, num_inference_steps=30, guidance_scale=7.5).images[0]
+    image = pipe(args.prompt, num_inference_steps=args.num_inference_steps, guidance_scale=args.guidance_scale).images[0]
     image.save(args.img_name)
