@@ -29,6 +29,8 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 pip install git+https://github.com/huggingface/diffusers
 ```
 
+Environments Debugging in Progress...
+
 ## dataset-maker Instructions
 
 ***KREAM Product Dataset Examples Collected by*** `dataset-maker`
@@ -160,3 +162,16 @@ python inference.py --hub_username [your hugging face username] --prompt 'outer,
 - [Using LoRA for Efficient Stable Diffusion Fine-Tuning](https://huggingface.co/blog/lora)
 - [Hugging Face Diffusers Text-to-Image Examples](https://github.com/huggingface/diffusers/tree/main/examples/text_to_image)
 - [Finetuning Stable Diffusion from Lambda Labs ML](https://github.com/justinpinkney/stable-diffusion)
+
+## Citation
+
+If you use KREAM Product Dataset, please cite it as:
+
+```
+@misc{lew2023kream,
+      author = {Lew, Hah Min},
+      title = {KREAM Product BLIP Captions},
+      year={2023},
+      howpublished= {\url{https://huggingface.co/datasets/hahminlew/kream-product-blip-captions/}}
+} 
+```
