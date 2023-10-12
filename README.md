@@ -5,10 +5,9 @@ Let's easily fine-tuning a pre-trained Stable Diffusion XL using `dataset-maker`
 Have fun creating realistic, high-quality fashion items!
 
 ## Highlights
-1. [Dependencies](https://github.com/hahminlew/easy-finetuning-stable-diffusion#dependencies)
-2. [dataset-maker Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#dataset-maker-instructions)
-3. [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#finetuning-stable-diffusion-instructions)
-4. [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
+- [dataset-maker Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#dataset-maker-instructions)
+- [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#finetuning-stable-diffusion-instructions)
+- [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
 
 ## Dependencies
 
@@ -26,7 +25,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ```conda activate efsd```
 
-``
+```
 pip install git+https://github.com/huggingface/diffusers
 ```
 
