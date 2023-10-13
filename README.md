@@ -15,8 +15,9 @@ Have fun creating realistic, high-quality fashion items!
 
 ## Dependencies
 
-- python <= 3.11
-- PyTorch 2.1.0
+- python == 3.11
+- xFormers
+- PyTorch == 2.0.1
 - Hugging Face 🤗: diffusers, transformers, datasets
 
 I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier Version 525.125.06.
