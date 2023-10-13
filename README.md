@@ -23,7 +23,7 @@ Have fun creating realistic, high-quality fashion items!
 - `top, The Supreme x Stussy Oversized Cotton Black Hoodie, a photography of a black shirt with a hood on and a logo on the chest.`
 - `bottom, The IAB Studio x Stussy Dye Sweat Wooven Shorts, a photography of a short pants with a logo.`
 
-**A more precise model will be released soon. Please try to generate high-quality fashion items through prompt engineering!*
+**A more precise model will be released soon. Please try to generate products through prompt engineering!*
 
 ## Dependencies
 
