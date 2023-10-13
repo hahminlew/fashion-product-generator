@@ -4,9 +4,9 @@ from argparse import ArgumentParser
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--hub_username", default="", type=str, 
+    parser.add_argument("--hub_username", default="hahminlew", type=str, 
                         help="Your Hugging Face username")
-    parser.add_argument("--prompt", default="The Nike x Balenciaga down jacket black.", type=str, 
+    parser.add_argument("--prompt", default="outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.", type=str, 
                         help="Type your prompt here")
     parser.add_argument("--img_name", default="generated kream product.png", type=str, 
                         help="Save image file name") 
