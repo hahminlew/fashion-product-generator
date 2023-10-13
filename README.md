@@ -9,6 +9,10 @@ Have fun creating realistic, high-quality fashion items!
 - [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#finetuning-stable-diffusion-instructions)
 - [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
 
+**Hugging Face URL** 🤗
+- Demo: [sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
+- Dataset: [kream-product-blip-captions](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions)
+
 ## Dependencies
 
 - python <= 3.11
@@ -145,6 +149,8 @@ sudo chmod +x run.sh
 **Make sure you have Hugging Face and wandb account. You should create a directory and personal tokens for Hugging Face. Also, please check your personal API keys for wandb.*
 
 ## Inference
+
+[SDXL-KREAM-Model-LoRA](https://huggingface.co/hahminlew/sdxl-kream-model-lora) is now available in Hugging Face 🤗.
 
 ```
 python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.' --img_name ***.png
