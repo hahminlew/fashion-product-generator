@@ -119,7 +119,7 @@ CUDA_LAUNCH_BLOCKING=1 python BLIP_captioning.py --dataset_dir [/path/to/dataset
 
 ## Finetuning Stable Diffusion Instructions
 
-I utilized `Hugging Face Diffusers Text-to-Image Examples` for finetuning a pre-trained Stable Diffusion XL with [LoRA](https://github.com/cloneofsimo/lora) under 4 NVIDIA GeForce RTX 3090 GPUs (Memory-Usage: approximately 65GB).
+I utilized `Hugging Face Diffusers Text-to-Image Examples` for finetuning a pre-trained Stable Diffusion XL with [LoRA](https://github.com/cloneofsimo/lora) under 4 NVIDIA GeForce RTX 3090 GPUs (Memory-Usage: approximately 65GB, Training time: approximately 15h for 10 epochs).
 
 ```cd finetuning```
 
