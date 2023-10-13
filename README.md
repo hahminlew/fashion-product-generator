@@ -138,12 +138,12 @@ CUDA_LAUNCH_BLOCKING=1 accelerate launch train_text_to_image_lora_sdxl.py \
   --dataset_name=$DATASET_NAME --caption_column="text" \
   --resolution=1024 --random_flip \
   --train_batch_size=1 \
-  --num_train_epochs=3 --checkpointing_steps=500 \
-  --learning_rate=1e-05 --lr_scheduler="constant" --lr_warmup_steps=0 \
+  --num_train_epochs=10 --checkpointing_steps=1000 \
+  --learning_rate=1e-06 --lr_scheduler="constant" --lr_warmup_steps=0 \
   --mixed_precision="fp16" \
   --seed=42 \
   --output_dir="sdxl-kream-model-lora" \
-  --validation_prompt="The Nike x Balenciaga down jacket black" --report_to="wandb" \
+  --validation_prompt="outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest" --report_to="wandb" \
   --push_to_hub
 ```
 
