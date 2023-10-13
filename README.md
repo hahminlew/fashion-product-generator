@@ -9,9 +9,9 @@ Have fun creating realistic, high-quality fashion items!
 - [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#finetuning-stable-diffusion-instructions)
 - [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
 
-**Hugging Face URL** 🤗
-- Demo: [sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
-- Dataset: [kream-product-blip-captions](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions)
+**Hugging Face Repository** 🤗
+- Model: [hahminlew/sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
+- Dataset: [hahminlew/kream-product-blip-captions](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions)
 
 ![img](./assets/generated_results.png)
 
