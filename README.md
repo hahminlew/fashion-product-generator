@@ -34,8 +34,6 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 pip install git+https://github.com/huggingface/diffusers
 ```
 
-Environments Debugging in Progress...
-
 ## dataset-maker Instructions
 
 ***KREAM Product Dataset Examples Collected by*** `dataset-maker`
