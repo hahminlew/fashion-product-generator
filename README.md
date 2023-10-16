@@ -16,12 +16,12 @@ Have fun creating realistic, high-quality fashion items!
 ![img](./assets/generated_results.png)
 
 `Prompts`
-- `outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.`
-- `top, (W) Balenciaga x Nike Slip Hoodie Dress Cream, a photography of a cream dress and a hood on.`
+- `outer, The Nike x Balenciaga Down Jacket Black, a photography of a black down jacket with a logo on the chest.`
+- `top, (W) Moncler x Adidas Slip Hoodie Dress Cream, a photography of a cream dress and a hood on.`
 - `bottom, Supreme Animal Print Baggy Jean Washed Indigo - 23FW, a photography of a dark blue jean with an animal printing on.`
-- `outer, The North Face x Supreme White Label Nuptse Down Jacket Cream Beige, a photography of a white puffer jacket with a red box logo on the front.`
+- `outer, The North Face x Supreme White Label Nuptse Down Jacket Cream, a photography of a white puffer jacket with a red box logo on the front.`
 - `top, The Supreme x Stussy Oversized Cotton Black Hoodie, a photography of a black shirt with a hood on and a logo on the chest.`
-- `bottom, The IAB Studio x Stussy Dye Sweat Wooven Shorts, a photography of a short pants with a logo.`
+- `bottom, IAB Studio x Stussy Tie-Dye Sweat Wooven Shorts, a photography of a dye short pants with a logo.`
 
 **A more precise model has been released! Please try to generate products through prompt engineering!*
 
