@@ -13,6 +13,8 @@ Have fun creating realistic, high-quality fashion items!
 - Model: [hahminlew/sdxl-kream-model-lora-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0) | Previous version: [hahminlew/sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
 - Dataset: [hahminlew/kream-product-blip-captions](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions)
 
+**Generate various creative products through prompt engineering!*
+
 ![img](./assets/generated_results.png)
 
 `Prompts`
@@ -22,8 +24,6 @@ Have fun creating realistic, high-quality fashion items!
 - `outer, The North Face x Supreme White Label Nuptse Down Jacket Cream, a photography of a white puffer jacket with a red box logo on the front.`
 - `top, The Supreme x Stussy Oversized Cotton Black Hoodie, a photography of a black shirt with a hood on and a logo on the chest.`
 - `bottom, IAB Studio x Stussy Tie-Dye Sweat Wooven Shorts, a photography of a dye short pants with a logo.`
-
-**A more precise model has been released! Please try to generate products through prompt engineering!*
 
 ## Dependencies
 
