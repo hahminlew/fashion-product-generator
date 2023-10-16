@@ -10,7 +10,7 @@ Have fun creating realistic, high-quality fashion items!
 - [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
 
 **Hugging Face Repository** 🤗
-- Model: [hahminlew/sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
+- Model: [hahminlew/sdxl-kream-model-lora-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0)
 - Dataset: [hahminlew/kream-product-blip-captions](https://huggingface.co/datasets/hahminlew/kream-product-blip-captions)
 
 ![img](./assets/generated_results.png)
@@ -23,7 +23,7 @@ Have fun creating realistic, high-quality fashion items!
 - `top, The Supreme x Stussy Oversized Cotton Black Hoodie, a photography of a black shirt with a hood on and a logo on the chest.`
 - `bottom, The IAB Studio x Stussy Dye Sweat Wooven Shorts, a photography of a short pants with a logo.`
 
-**A more precise model will be released soon. Please try to generate products through prompt engineering!*
+**A more precise model has been released! Please try to generate products through prompt engineering!*
 
 ## Dependencies
 
@@ -163,7 +163,7 @@ sudo chmod +x run.sh
 
 ## Inference
 
-[SDXL-KREAM-Model-LoRA](https://huggingface.co/hahminlew/sdxl-kream-model-lora) is now available in Hugging Face 🤗.
+[SDXL-KREAM-Model-LoRA-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0) is now available in Hugging Face 🤗.
 
 ```
 python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.' --img_name ***.png
