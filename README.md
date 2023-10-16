@@ -166,7 +166,23 @@ sudo chmod +x run.sh
 [SDXL-KREAM-Model-LoRA-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0) is now available in Hugging Face 🤗.
 
 ```
-python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga down jacket black, a photography of a black down jacket with a logo on the chest.' --img_name ***.png
+python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga Down Jacket Black, a photography of a black down jacket with a logo on the chest.' --img_name example.png
+```
+
+**Usage**
+
+```python
+from diffusers import DiffusionPipeline
+import torch
+
+pipe = DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16)
+pipe.to("cuda")
+pipe.load_lora_weights("hahminlew/sdxl-kream-model-lora-2.0")
+
+prompt = "outer, The Nike x Balenciaga Down Jacket Black, a photography of a black down jacket with a logo on the chest."
+
+image = pipe(prompt, num_inference_steps=45, guidance_scale=7.5).images[0]
+image.save("example.png")
 ```
 
 **Parameter Descriptions**
