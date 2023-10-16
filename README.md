@@ -166,7 +166,7 @@ sudo chmod +x run.sh
 [SDXL-KREAM-Model-LoRA-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0) is now available in Hugging Face 🤗.
 
 ```
-python inference.py --hub_username [your hugging face username] --prompt 'outer, The Nike x Balenciaga Down Jacket Black, a photography of a black down jacket with a logo on the chest.' --img_name example.png
+python inference.py --prompt 'outer, The Nike x Balenciaga Down Jacket Black, a photography of a black down jacket with a logo on the chest.' --img_name example.png
 ```
 
 **Usage**
