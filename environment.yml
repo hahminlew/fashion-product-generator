@@ -1,4 +1,4 @@
-name: efsd
+name: fpg
 channels:
   - defaults
 dependencies:
