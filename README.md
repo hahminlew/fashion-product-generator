@@ -36,7 +36,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ****Please refer to [environment.yml](./environment.yml) for more details.***
 
-```cd easy-finetuning-stable-diffusion```
+```cd fashion-product-generator```
 
 ```conda env create -f environment.yml```
 
