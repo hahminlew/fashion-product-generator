@@ -62,6 +62,7 @@ dependencies:
     - sympy==1.12
     - tokenizers==0.14.1
     - torch==2.0.1
+    - torchvision==0.15.2
     - tqdm==4.66.1
     - transformers==4.34.0
     - trio==0.22.2
@@ -70,6 +71,7 @@ dependencies:
     - typing-extensions==4.8.0
     - tzdata==2023.3
     - urllib3==2.0.6
+    - wandb==0.15.12
     - webdriver-manager==4.0.1
     - wsproto==1.2.0
     - xformers==0.0.22
