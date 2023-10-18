@@ -1,5 +1,5 @@
 # Fashion-Product-Generator
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hahminlew/easy-finetuning-stable-diffusion/blob/main/fashion_product_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hahminlew/easy-finetuning-stable-diffusion/blob/main/fashion_product_demo.ipynb)[![Hugging Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0)
 
 Let's easily fine-tuning a pre-trained Stable Diffusion XL using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
 
