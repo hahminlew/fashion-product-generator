@@ -1,4 +1,6 @@
 # Fashion-Product-Generator
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hahminlew/easy-finetuning-stable-diffusion/blob/main/fashion_product_demo.ipynb)
+
 Let's easily fine-tuning a pre-trained Stable Diffusion XL using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
 
 **Fashion-Product-Generator** is a finetuned text-to-image generative model with a custom dataset collected from [KREAM](https://kream.co.kr/), one of the best online-resell market in Korea.
