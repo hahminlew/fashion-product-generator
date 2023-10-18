@@ -40,7 +40,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ```conda env create -f environment.yml```
 
-```conda activate efsd```
+```conda activate fpg```
 
 ```
 pip install git+https://github.com/huggingface/diffusers
