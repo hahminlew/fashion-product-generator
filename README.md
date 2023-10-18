@@ -1,7 +1,7 @@
-# KREAM-Product-Generator
+# Fashion-Product-Generator
 Let's easily fine-tuning a pre-trained Stable Diffusion XL using `dataset-maker` and [LoRA](https://github.com/cloneofsimo/lora)!
 
-**KREAM-Product-Generator** is a finetuned text-to-image generative model with a custom dataset collected from [KREAM](https://kream.co.kr/), one of the best online-resell market in Korea.
+**Fashion-Product-Generator** is a finetuned text-to-image generative model with a custom dataset collected from [KREAM](https://kream.co.kr/), one of the best online-resell market in Korea.
 Have fun creating realistic, high-quality fashion items!
 
 ## Highlights
