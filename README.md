@@ -7,9 +7,9 @@ Let's easily fine-tuning a pre-trained Stable Diffusion XL using `dataset-maker`
 Have fun creating realistic, high-quality fashion items!
 
 ## Highlights
-- [dataset-maker Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#dataset-maker-instructions)
-- [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/easy-finetuning-stable-diffusion#finetuning-stable-diffusion-instructions)
-- [Inference](https://github.com/hahminlew/easy-finetuning-stable-diffusion#inference)
+- [dataset-maker Instructions](https://github.com/hahminlew/fashion-product-generator#dataset-maker-instructions)
+- [Finetuning Stable Diffusion Instructions](https://github.com/hahminlew/fashion-product-generator#finetuning-stable-diffusion-instructions)
+- [Inference](https://github.com/hahminlew/fashion-product-generator#inference)
 
 **Hugging Face Repository** 🤗
 - Model: [hahminlew/sdxl-kream-model-lora-2.0](https://huggingface.co/hahminlew/sdxl-kream-model-lora-2.0) | Previous version: [hahminlew/sdxl-kream-model-lora](https://huggingface.co/hahminlew/sdxl-kream-model-lora)
@@ -38,7 +38,7 @@ I tested the conda environments on Linux, CUDA version 12.0, and NVIDIA Drivier 
 
 ****Please refer to [environment.yml](./environment.yml) for more details.***
 
-```cd easy-finetuning-stable-diffusion```
+```cd fashion-product-generator```
 
 ```conda env create -f environment.yml```
 
